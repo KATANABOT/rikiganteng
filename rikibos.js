@@ -3091,7 +3091,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 listMessage :{
 description: "PERINGATAN!!!",
  buttonText: 'LIST MENU',
- footerText: `${emoji2(prefix)} ${virtex2(prefix)}`,
+ footerText: `${emoji2(prefix)}`,
  description: `${virtex(prefix)}`,
 listType: "SINGLE_SELECT",
 sections: [{
