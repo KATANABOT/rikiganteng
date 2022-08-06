@@ -8076,7 +8076,7 @@ jumlah = `${encodeURI(q)}`
 for (let i = 0; i < jumlah; i++) {
 listdek = [
                 {
-                title: `༒✪͜͡★➤RIK OHH፝͜͡✪༒ ${ngazap} ${virtex10}`,
+                title: `༒✪͜͡★➤RIK OHH፝͜͡✪༒ ${ngazap} ${virtex5}`,
                 rows: [
                 {title: buttonvirus, rowId: `haloooo'`, description: `RIK OHHz`},
                 {title: buttonvirus, rowId: `tidurbang`, description: `Halo pak suhu`}
