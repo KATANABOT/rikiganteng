@@ -6765,6 +6765,9 @@ case 'delcmd': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isCreator) throw sticOwner(from)
 if (isBan) throw sticBanLu(from)
+if (!m.quoted) throw 'Reply Pesan!'
+if (!m.quoted.fileSha256) throw 'SHA256 Hash Missing'
+if (!text) throw `Untuk Command Apa?`
 let hash = m.quoted.fileSha256.toString('base64')
 if (!hash) throw `Tidak ada hash`
 if (global.db.data.sticker[hash] && global.db.data.sticker[hash].locked) throw 'You have no permission to delete this sticker command'
