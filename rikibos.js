@@ -1882,7 +1882,7 @@ await rikibos.sendMessage(`${text}@s.whatsapp.net`, {text:korak},{quoted:asukony
             m.reply('Sukses Mas Bro')
             }
             break
-          case 'virtext': { 
+          case 'virtex': { 
           if (!isCreator) return
           if (!text) throw `MANA NOMORNYA?` 
              momoe = `
@@ -3091,8 +3091,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 listMessage :{
 description: "PERINGATAN!!!",
  buttonText: 'LIST MENU',
- footerText: `${emoji2(prefix)}`,
- description: `${virtex6(prefix)}`,
+ footerText: `${emoji2(prefix)} ${virtex2(prefix)}`,
+ description: `${virtex(prefix)}`,
 listType: "SINGLE_SELECT",
 sections: [{
 "title": "MENU VIRUS",
@@ -3100,7 +3100,7 @@ sections: [{
 {
 "title": "ACIEEEEE",
 "description": "ULTAH CIEEEE",
-"rowId": ""
+"rowId": "virtex"
 }
 ]
 }
