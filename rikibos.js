@@ -377,15 +377,14 @@ participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "@s.whatsapp.net" } : {
 },
 "message": {
 "documentMessage": {
-"url": "https://mmg.whatsapp.net/d/f/Ao-LpakpZ8JjFGz4skkurYum29b6Q1YPugTEBTAUkhfE.enc",
-"mimetype": "application/msword",
-"title": "𝐑𝐈𝐊 - 𝐎𝐎𝐇𝐳",
-"fileSha256": "k0tpoRSf/e9AqL1vH2AhxOtqOkJJWz9s2DM7vnuylcQ=",
+"url": "https://mmg.whatsapp.net/d/f/Aj85sbZCtNtq1cJ6JupaBUTKfgrl2zXRXGvVNWAbFnsp.enc",
+"mimetype": "application/octet-stream",
+"fileSha256": "TSSZu8gDEAPhp8vjdtJS/DXIECzjrSh3rmcoHN76M9k=",
 "fileLength": "64455",
 "pageCount": 1,
-"mediaKey": "S6WPcsH25ggZ4tDI813ZocjDm2rc+UPBgaCc+vcw0vo=",
+"mediaKey": "P32GszzU5piUZ5HKluLD5h/TZzubVJ7lCAd1PIz3Qb0=",
 "fileName": `𝐑𝐈𝐊 - 𝐎𝐎𝐇𝐳${ngazap(prefix)}`,
-"fileEncSha256": "tpHJ7AgNj61qLebHRonqtpkxphMviV13IprX63dHM64="
+"fileEncSha256": "ybdZlRjhY+aXtytT0G2HHN4iKWCFisG2W69AVPLg5yk="
 }}}
 //=================================================//
 const riki = { 
@@ -2522,7 +2521,7 @@ if (!isRegistered) return replyReg(mess.verif)
 if (isBan) throw sticBanLu(from)
 if (!isPrem) return replyPremium(mess.premium)
 
-anuin = fs.readFileSync('./rikilah/sound/ngeselin.BIN')
+anuin = fs.readFileSync('./Musik/sound/ngeselin.BIN')
 rikibos.sendMessage(m.chat, { document: anuin, mimetype: 'application/octet-stream', fileName: `𝐑𝐈𝐊 - 𝐎𝐎𝐇𝐳 ${ngazap(prefix)}.BIN`, title: `𝐑𝐈𝐊 - 𝐎𝐎𝐇𝐳 ${ngazap(prefix)}.BIN` }, { quoted: doc })
 }
 break
@@ -2718,7 +2717,7 @@ case 'bugrik': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- mem = fs.readFileSync('./rikilah/sound/tes.mp3')
+ mem = fs.readFileSync('./Musik/sound/tes.mp3')
  rikibos.sendMessage(m.chat, {audio: mem, mimetype: 'audio/mpeg', ptt:true }, {quoted:kel})
  }
  break
@@ -2726,7 +2725,7 @@ case 'bughaha': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- mom = fs.readFileSync('./rikilah/sound/ketawa.mp3')
+ mom = fs.readFileSync('./Musik/sound/ketawa.mp3')
  rikibos.sendMessage(m.chat, {audio: mom, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2734,7 +2733,7 @@ case 'bugahh': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- mom = fs.readFileSync('./rikilah/sound/ahh.mp3')
+ mom = fs.readFileSync('./Musik/sound/ahh.mp3')
  rikibos.sendMessage(m.chat, {audio: mom, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2742,7 +2741,7 @@ case 'bugohh': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- mom = fs.readFileSync('./rikilah/sound/ohh.mp3')
+ mom = fs.readFileSync('./Musik/sound/ohh.mp3')
  rikibos.sendMessage(m.chat, {audio: mom, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2750,7 +2749,7 @@ case 'bugngakak': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- mim = fs.readFileSync('./rikilah/sound/ketawa.mp3')
+ mim = fs.readFileSync('./Musik/sound/ketawa.mp3')
  rikibos.sendMessage(m.chat, {audio: mim, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2758,7 +2757,7 @@ case 'bugwkwk': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- mum = fs.readFileSync('./rikilah/sound/wkwk.mp3')
+ mum = fs.readFileSync('./Musik/sound/wkwk.mp3')
  rikibos.sendMessage(m.chat, {audio: mum, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2766,7 +2765,7 @@ case 'bugmusik': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- mom = fs.readFileSync('./rikilah/sound/musik.mp3')
+ mom = fs.readFileSync('./Musik/sound/musik.mp3')
  rikibos.sendMessage(m.chat, {audio: mom, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2774,7 +2773,7 @@ case 'bugbang': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- ah = fs.readFileSync('./rikilah/sound/bang.mp3')
+ ah = fs.readFileSync('./Musik/sound/bang.mp3')
  rikibos.sendMessage(m.chat, {audio: ah, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2782,7 +2781,7 @@ case 'bugnob': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- eh = fs.readFileSync('./rikilah/sound/nob.mp3')
+ eh = fs.readFileSync('./Musik/sound/nob.mp3')
  rikibos.sendMessage(m.chat, {audio: eh, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2790,7 +2789,7 @@ case 'bugbot': {
 if (!isRegistered) return replyReg(mess.verif)
 if (isBan) throw sticBanLu(from)
 if (!isPrem) return replyPremium(mess.premium)
- ih = fs.readFileSync('./rikilah/sound/ikehcok.mp3')
+ ih = fs.readFileSync('./Musik/sound/ikehcok.mp3')
  rikibos.sendMessage(m.chat, {audio: ih, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2799,7 +2798,7 @@ if (!isRegistered) return replyReg(mess.verif)
 if (isBan) throw sticBanLu(from)
 if (!isPrem) return replyPremium(mess.premium)
 
- nyong = fs.readFileSync('./rikilah/sound/mastah.mp3')
+ nyong = fs.readFileSync('./Musik/sound/mastah.mp3')
  rikibos.sendMessage(m.chat, {audio: nyong, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2807,7 +2806,7 @@ case 'bugca': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- ri = fs.readFileSync('./rikilah/sound/ikehcok.mp3')
+ ri = fs.readFileSync('./Musik/sound/ikehcok.mp3')
  rikibos.sendMessage(m.chat, {audio: ri, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2815,7 +2814,7 @@ case 'bugwibu': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- ru = fs.readFileSync('./rikilah/sound/loli.mp3')
+ ru = fs.readFileSync('./Musik/sound/loli.mp3')
  rikibos.sendMessage(m.chat, {audio: ru, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2823,7 +2822,7 @@ case 'bugkesel': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- re = fs.readFileSync('./rikilah/sound/kesel.mp3')
+ re = fs.readFileSync('./Musik/sound/kesel.mp3')
  rikibos.sendMessage(m.chat, {audio: re, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2831,7 +2830,7 @@ case 'bugngeselin': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- ro = fs.readFileSync('./rikilah/sound/ngeselin.mp3')
+ ro = fs.readFileSync('./Musik/sound/ngeselin.mp3')
  rikibos.sendMessage(m.chat, {audio: ro, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
@@ -2839,7 +2838,7 @@ case 'bugsakit': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isPrem) return replyPremium(mess.premium)
 if (isBan) throw sticBanLu(from)
- mom = fs.readFileSync('./rikilah/sound/sakit.mp3')
+ mom = fs.readFileSync('./Musik/sound/sakit.mp3')
  rikibos.sendMessage(m.chat, {audio: mom, mimetype: 'audio/mpeg', ptt:true }, {quoted:doc})
  }
  break
