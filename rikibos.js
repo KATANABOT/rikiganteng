@@ -813,18 +813,18 @@ rikibos.sendMessage(from, { text: teks.trim() }, 'extendedTextMessage', { quoted
 break
 case 'addprem':
 if (!m.key.fromMe && !isCreator) return replyNya(mess.owner)
-bnnd = `${args[0].replace('@', '')}@s.whatsapp.net`
-prem.push(bnnd)
+bnnnd = `${args[0].replace('@', '')}@s.whatsapp.net`
+prem.push(bnnnd)
 fs.writeFileSync('./rikilah/Database/premium.json', JSON.stringify(prem))
-reply(`Nomor ${bnnd} Telah Menjadi Premium!`)
+reply(`Nomor ${bnnnd} Telah Menjadi Premium!`)
 break
 case 'delprem':
 if (!m.key.fromMe && !isCreator) return replyNya(mess.owner)
-yaa = `${args[0].replace('@', '')}@s.whatsapp.net`
-unp = prem.indexOf(yaa)
+yaaa = `${args[0].replace('@', '')}@s.whatsapp.net`
+unp = prem.indexOf(yaaa)
 prem.splice(unp, 1)
 fs.writeFileSync('./rikilah/Database/premium.json', JSON.stringify(prem))
-reply(`Nomor ${yaa} Telah Di Hapus Premium!`)
+reply(`Nomor ${yaaa} Telah Di Hapus Premium!`)
 break
 case 'addowner':
 if (isBan) return replyBan('Maaf Kamu Sudah Di Ban Silahkan Chat Owner Di Bawah Untuk Membuka Nya')
@@ -3557,7 +3557,7 @@ break
 //=================================================//
 case 'ada apa': case 'apaa': {
 if (isBan) return replyBan('Maaf Kamu Sudah Di Ban Silahkan Chat Owner Di Bawah Untuk Membuka Nya')
- hey = fs.readFileSync('./Musik/sound/adapa.mp3')
+ hey = fs.readFileSync('./Musik/sound/adaapa.mp3')
  rikibos.sendMessage(m.chat, {audio: hey, mimetype: 'audio/mpeg', ptt:true }, {quoted: riki})
  }
  break
@@ -6764,9 +6764,7 @@ case 'delcmd': {
 if (!isRegistered) return replyReg(mess.verif)
 if (!isCreator) throw sticOwner(from)
 if (isBan) throw sticBanLu(from)
-if (!m.quoted) throw 'Reply Pesan!'
 if (!m.quoted.fileSha256) throw 'SHA256 Hash Missing'
-if (!text) throw `Untuk Command Apa?`
 let hash = m.quoted.fileSha256.toString('base64')
 if (!hash) throw `Tidak ada hash`
 if (global.db.data.sticker[hash] && global.db.data.sticker[hash].locked) throw 'You have no permission to delete this sticker command'
